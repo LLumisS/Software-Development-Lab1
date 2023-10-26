@@ -10,10 +10,10 @@
 С7: 1105 % 7 = 6 -> тип double.  
 ## Інструкція
 ### Початкові налаштування
-1. Встановіть **JDK 17** або вище.
+1. Встановіть **JDK**.
 2. Налаштуйте змінні середовища, а саме **JAVA_HOME** (`<шлях до папки зі встановленним JDK>`) та **PATH** (`%JAVA_HOME%\bin`).
 ### Запуск проекту
 1. **Склонуйте** репозиторій: `git clone https://github.com/LLumisS/Software-Development-Lab1.git`
 2. Перейдіть у каталог склонованого репозиторія: `cd Software-Development-Lab1`
-3. Проведіть **компіляцію** проекту: `javac -d /target/classes src/main/java/org/example/*.java`
-4. **Запустіть** проект: `java -cp target/classes org.example.Main`
+3. Проведіть **компіляцію** проекту: `javac -d bin src/main/java/org/example/*.java`
+4. **Запустіть** проект: `java -cp bin org.example.Main`
