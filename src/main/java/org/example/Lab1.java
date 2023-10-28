@@ -46,7 +46,7 @@ public class Lab1 {
         }
 
         scanner.close();
-        System.out.println("Result: " + result);
+        System.out.println("\nResult: " + result + "\n");
     }
 
     private static double getValue(double input) throws InputMismatchException {
