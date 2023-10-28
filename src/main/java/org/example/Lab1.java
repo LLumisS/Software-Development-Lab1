@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Lab1 {
-    public double SumFunc() {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         double a, b, n, m;
@@ -46,10 +46,10 @@ public class Lab1 {
         }
 
         scanner.close();
-        return result;
+        System.out.println("Result: " + result);
     }
 
-    private double getValue(double input) throws InputMismatchException {
+    private static double getValue(double input) throws InputMismatchException {
         if (input % 1 != 0)
             throw new InputMismatchException();
         return input;
