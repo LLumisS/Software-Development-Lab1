@@ -25,15 +25,15 @@ public class Lab1 {
                 System.out.print("m = ");
                 m = getValue(scanner.nextDouble());
 
-                if(a > n || b > m)
+                if (a > n || b > m)
                     throw new InputMismatchException();
+                
+                if (a <= 1 && n >= 1)
+                    throw new ArithmeticException();
 
                 for (double i = a; i <= n; i++)
-                    for (double j = b; j <= m; j++) {
-                        if (i - 1 == 0)
-                            throw new ArithmeticException();
+                    for (double j = b; j <= m; j++)
                         result += i * j / (i - 1);
-                    }
 
                 break;
             } catch (InputMismatchException e) {
